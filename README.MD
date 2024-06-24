@@ -1,51 +1,23 @@
-# Tasky
-An ultimate task management systems  
 
-# Overview  
-This document serves as comprehensive documentation for the project Taskmaster, a platform built with Django REST Framework for the backend, HTML, jQuery, Ajax, and Tailwind CSS for the frontend. This platform allows users to manage projects and tasks by providing functionalities such as adding, deleting, and updating tasks.  
+**Benmore Tasky App**
+<img width="959" alt="image" src="https://github.com/ugokingsley/benmore-tasky/assets/19801981/a900f58f-d54f-4106-89c1-8d3506db2eeb">
 
+Project Description
 
-## Table of Contents  
+**1. About Project**
 
-- Installation  
-- Frontend Implementation
-- Backend Setup
-- API Endpoints
-- Navigation around the page
-- Testing
-# installation  
-To set up the project locally, follow these steps:  
-
-1. Clone the repository from [GitHub Repo URL].
-2. Setup virtual environment `python3 -m virtualenv` and  `source virtualenv venv`
-3. Install the required backend dependencies using `pip install -r requirements.txt`.
-4. Configure the database settings in `settings.py`.
-5. Run migrations using `python manage.py migrate`.
-6. Start the development server with `python manage.py runserver`.
-7. install the needed frontend node_modules by running npm install.
-8. make sure the package.json files are present.
-
-# Frontend setup  
-once npm install is successful, you can run your html through any means possible  
-# Backend setup
-once `python3 manage.py runserver` is running successfully, you are good to go.  
-**API Endpoints**  
-The following API endpoints are available for managing tasks:  
-    - POST api/tasks/options: Create a new task.
-    - GET api/tasks/project/<str:pid> List all tasks.
-    - DELETE api/tasks/delete/<name>/: Delete a task by name.
-    - PUT api/tasks/<str:tid><pk>/: Update a task by primary key.    
-    
-| Endpoint                   | Method | Description                       |Requirements|
-|----------------------------|--------|-----------------------------------|------------|
-| `/tasks/create/`          | POST   | Create a new task.               |name, contributors, expires, image|
-| `/tasks/list/`            | GET    | List all tasks.                  |
-| `/tasks/delete/<name>/`   | DELETE | Delete a task by name.           |
-| `/tasks/update/<name>/`   | PATCH    | Update a task by primary key.  |name, contributors, expires, image|  
-| `/finish-tasks/<name>/`   | POST   | Sets a task to completed.      |
-| `/search/`                | GET    | Searches the database based on any keywords/fields.|
-
-**Navigation around the page**  
-
-
+  Develop this task management dashboard application using Django for the backend and HTML, TailwindCSS, and jQuery for the frontend
+**2. Stack**
+   - Python (Django Framework)
+   - Docker / Docker Compose
+   - Tailwind CSS
+     
+**3. Installation Instructions**
+   - Clone the repo
+   - Install python requirements via terminal:
+     **pip install requirements.txt** and  **npm install -D tailwindcss** to install Tailwind CSS as a dev dependency using NPM
+   - Run the following command to watch for changes and compile the Tailwind CSS code:
+     **npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch**
+   - Run the following command to start django local server in another terminal window:
+     **python manage.py runserver 5000**
   
